@@ -7,27 +7,43 @@
 
 import Foundation
 
-var data: [Int] = [1,4,3,2,7,8,5]
-
-
-
-func insertionSort(data: inout [Int]) {
-    for i in 1..<data.count {
-        print("this is i \(i)")
-        print("this is data[i] \(data[i])")
-        print("this is data[i-1] \(data[i-1])")
-        if data[i] < data[i-1] {
-            print("SWAPPED")
-            var tempi1 = data[i-1]
-            var tempi = data[i]
-            data[i-1] = tempi
-            data[i] = tempi1
-            print(data)
+func quickSort(data: [Int]) -> [Int] {
+    
+    var pivot: Int = data[0]
+    var left = [Int]()
+    var right = [Int]()
+    if data.count >= 2 {
+        for i in 1 ..< data.count {
+            if data[i] <= pivot {
+                left.append(data[i])
+            }
+            
+            else {
+                right.append(data[i])
+            }
         }
     }
+    else{
+        return data
+    }
+
+    var newList = [Int]()
+//    newList.append(contentsOf: left)
+//    newList.append(pivot)
+//    newList.append(contentsOf: right)
+    left = quickSort(data: left)
+    right = quickSort(data: right)
+            
+    
+    newList.append(contentsOf: left)
+    newList.append(pivot)
+    newList.append(contentsOf: right)
+    
+    return newList
+        
 }
 
-print(data)
 
-insertionSort(data: &data)
-
+var data = [5,4,3,2,7,10,6,9,8]
+var sorted = quickSort(data: data)
+print(sorted)

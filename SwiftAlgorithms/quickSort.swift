@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+let start = CFAbsoluteTimeGetCurrent()
+var data = [5,4,3,2,7,10,6,9,8]
+var sorted = quickSort(data: data)
+print(sorted)
+

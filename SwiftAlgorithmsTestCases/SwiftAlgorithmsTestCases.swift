@@ -59,12 +59,68 @@ final class SwiftAlgorithmsTestCases: XCTestCase {
         let sut = Algorithm()
         let searchData = [1,2,3,4,5,6]
         let searchItem = 4
-        let expected = true
+        let _ = true
         
         //ACT
         measure {
-            let actual = sut.linearSearch(data: searchData, item: searchItem)
+            let _ = sut.linearSearch(data: searchData, item: searchItem)
         }
+    }
+    
+    func testLinearSearchWithNegativeValuesInArrayAndSearchHitReturnsTrue() {
+        
+        //ARRANGE
+        //sut = system under test ie function being tested
+        let sut = Algorithm()
+        let searchData = [-1,-4,-2,-7,9,3]
+        let searchItem = -2
+        let expected = true
+        
+        //ACT
+        let actual = sut.linearSearch(data: searchData, item: searchItem)
+        
+        
+        //ASSERT
+        XCTAssertEqual(actual, expected)
         
     }
+    
+    func testBubbleSortWithArrayAndFunctionReturnsArray() {
+        
+        //ARRANGE
+        //sut = system under test ie function being tested
+        let sut = Algorithm()
+        let unsortedData = [-1,-4,-2,-7,9,3]
+        let expected = [-7,-4,-2,-1,3,9]
+        
+        //ACT
+        let actual = sut.bubbleSort(data: unsortedData)
+        
+        
+        //ASSERT
+        XCTAssertEqual(actual, expected)
+        
+        print(actual)
+        
+    }
+    
+    func testBubbleSortWithEmptyArrayAndFunctionReturnsEmptyArray() {
+        
+        //ARRANGE
+        //sut = system under test ie function being tested
+        let sut = Algorithm()
+        let unsortedData = [-1,-4,-2,-7,9,3]
+        let expected = [-7,-4,-2,-1,3,9]
+        
+        //ACT
+        let actual = sut.bubbleSort(data: unsortedData)
+        
+        
+        //ASSERT
+        XCTAssertEqual(actual, expected)
+        
+        print(actual)
+        
+    }
+    
 }

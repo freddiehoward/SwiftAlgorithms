@@ -10,7 +10,41 @@ import Foundation
 class Algorithm {
     
     func linearSearch(data: [Int], item: Int) -> Bool {
-        return true
-    }
+        for i in 0 ..< data.count {
+            if data[i] == item {
+                return true
+                }
+            }
+        
+        return false
+        
+        }
     
+    func bubbleSort(data: [Int]) -> [Int] {
+        
+        var newData = data
+        
+        if newData.count == 0 {
+            return []
+        }
+        
+        for _ in 1 ..< newData.count {
+            for j in 1 ..< newData.count {
+                
+                if newData[j]<newData[j-1] {
+                    
+                    var tempLess = newData[j]
+                    var tempMore = newData[j-1]
+                    newData[j-1] = tempLess
+                    newData[j] = tempMore
+                    
+                }
+                
+            }
+        }
+        return newData
+        
+    }
 }
+
+

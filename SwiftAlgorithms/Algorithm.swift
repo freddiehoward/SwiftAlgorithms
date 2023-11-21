@@ -13,12 +13,12 @@ class Algorithm {
         for i in 0 ..< data.count {
             if data[i] == item {
                 return true
-                }
             }
+        }
         
         return false
         
-        }
+    }
     
     func bubbleSort(data: [Int]) -> [Int] {
         
@@ -33,8 +33,8 @@ class Algorithm {
                 
                 if newData[j]<newData[j-1] {
                     
-                    var tempLess = newData[j]
-                    var tempMore = newData[j-1]
+                    let tempLess = newData[j]
+                    let tempMore = newData[j-1]
                     newData[j-1] = tempLess
                     newData[j] = tempMore
                     
@@ -44,6 +44,16 @@ class Algorithm {
         }
         return newData
         
+    }
+    
+    func binarySearch(data: [Int]) -> [Int]{
+        
+        if data.count<1 {
+            return data
+        }
+        else {
+            return data
+        }
     }
 }
 

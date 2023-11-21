@@ -123,4 +123,18 @@ final class SwiftAlgorithmsTestCases: XCTestCase {
         
     }
     
+    func testBinarySortWithAnEmptyArray() {
+        
+        //ARRANGE
+        let sut = Algorithm()
+        let unsortedData = [Int]()
+        let expected = [Int]()
+        
+        //ACT
+        let actual = sut.binarySearch(data: unsortedData)
+        
+        //ASSERT
+        XCTAssertEqual(actual, expected)
+    }
+    
 }

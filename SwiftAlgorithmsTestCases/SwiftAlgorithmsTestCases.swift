@@ -128,10 +128,26 @@ final class SwiftAlgorithmsTestCases: XCTestCase {
         //ARRANGE
         let sut = Algorithm()
         let unsortedData = [Int]()
-        let expected = [Int]()
+        let expected = false
+        let searchNumber = 0
         
         //ACT
-        let actual = sut.binarySearch(data: unsortedData)
+        let actual = sut.binarySearch(data: unsortedData, searchNumber: searchNumber)
+        
+        //ASSERT
+        XCTAssertEqual(actual, expected)
+    }
+    
+    func testBinarySortWithSomeArraySearchHitReturnsTrue() {
+        
+        //ARRANGE
+        let sut = Algorithm()
+        let unsortedData = [1,2,3,4,5,6]
+        let expected = true
+        let searchNumber = 2
+        
+        //ACT
+        let actual = sut.binarySearch(data: unsortedData, searchNumber: searchNumber)
         
         //ASSERT
         XCTAssertEqual(actual, expected)

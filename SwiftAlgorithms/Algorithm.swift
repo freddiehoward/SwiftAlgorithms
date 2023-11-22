@@ -46,15 +46,10 @@ class Algorithm {
         
     }
     
-    func binarySearch(data: [Int]) -> [Int]{
-        
-        if data.count<1 {
-            return data
-        }
-        else {
-            return data
+    func binarySearch(data: [Int], searchNumber: Int) -> Bool{
+       
+            
         }
     }
-}
 
 

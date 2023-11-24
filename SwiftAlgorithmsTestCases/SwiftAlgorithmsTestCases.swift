@@ -148,7 +148,7 @@ final class SwiftAlgorithmsTestCases: XCTestCase {
         
         //ACT
         let actual = sut.binarySearch(data: unsortedData, searchNumber: searchNumber)
-        
+        print(actual)
         //ASSERT
         XCTAssertEqual(actual, expected)
     }

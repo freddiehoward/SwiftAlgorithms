@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6615B7462AF506D5009A934B /* quickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615B7452AF506D5009A934B /* quickSort.swift */; };
-		6659BE962AFA6957004C9AB3 /* SwiftAlgorithmsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE952AFA6957004C9AB3 /* SwiftAlgorithmsTestCases.swift */; };
 		6659BE9B2AFA69C0004C9AB3 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE9A2AFA69C0004C9AB3 /* Algorithm.swift */; };
-		6659BE9C2AFA6B1F004C9AB3 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE9A2AFA69C0004C9AB3 /* Algorithm.swift */; };
+		6673C3602B10B360002756CC /* SwiftAlgorithmsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE952AFA6957004C9AB3 /* SwiftAlgorithmsTestCases.swift */; };
+		6673C3632B10B4E5002756CC /* SwiftAlgorithmsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE952AFA6957004C9AB3 /* SwiftAlgorithmsTestCases.swift */; };
+		6673C3642B10B576002756CC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F97612AF134A30060CAB2 /* main.swift */; };
+		6673C3652B10B57D002756CC /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE9A2AFA69C0004C9AB3 /* Algorithm.swift */; };
 		669F97622AF134A30060CAB2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F97612AF134A30060CAB2 /* main.swift */; };
 		669F97692AF135180060CAB2 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F97682AF135180060CAB2 /* InsertionSort.swift */; };
-		66A4C7542B0CE48B002A4C9E /* SwiftAlgorithmsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659BE952AFA6957004C9AB3 /* SwiftAlgorithmsTestCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -182,8 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6659BE962AFA6957004C9AB3 /* SwiftAlgorithmsTestCases.swift in Sources */,
-				6659BE9C2AFA6B1F004C9AB3 /* Algorithm.swift in Sources */,
+				6673C3642B10B576002756CC /* main.swift in Sources */,
+				6673C3652B10B57D002756CC /* Algorithm.swift in Sources */,
+				6673C3602B10B360002756CC /* SwiftAlgorithmsTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +195,7 @@
 			files = (
 				669F97622AF134A30060CAB2 /* main.swift in Sources */,
 				6659BE9B2AFA69C0004C9AB3 /* Algorithm.swift in Sources */,
-				66A4C7542B0CE48B002A4C9E /* SwiftAlgorithmsTestCases.swift in Sources */,
+				6673C3632B10B4E5002756CC /* SwiftAlgorithmsTestCases.swift in Sources */,
 				6615B7462AF506D5009A934B /* quickSort.swift in Sources */,
 				669F97692AF135180060CAB2 /* InsertionSort.swift in Sources */,
 			);
